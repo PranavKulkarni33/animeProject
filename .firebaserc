@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "animeproject-79a48": {
+      "hosting": {
+        "animeProject": [
+          "animeproject-79a48"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "animeproject-79a48"
+  }
+}
