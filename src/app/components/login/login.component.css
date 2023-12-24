@@ -1,0 +1,58 @@
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Black opaque background */
+  }
+  
+  /* Title */
+  .futuristic-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white; /* Text color */
+  }
+  
+  /* Login Card Styling */
+  .card {
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9); /* Light background color */
+    max-width: 400px; /* Adjust maximum width as needed */
+    margin: 50px auto; /* Center the card */
+  }
+  
+  .card-body {
+    padding: 40px; /* Adjust padding as needed */
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  input[type='email'],
+  input[type='password'],
+  .btn {
+    border-radius: 10px;
+  }
+  
+  .row {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .text-danger {
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .back-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  

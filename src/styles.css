@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body {
+    /* Add the background image */
+    background-image: url('assets/background.png');
+    background-size: cover;
+    background-position: center center;
+    /* Other body styles */
+  }
+
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Black opaque background */
+  }
+  
+  /* Title and button styles */
+  .futuristic-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white; /* Text color */
+  }
+  
+  .futuristic-button {
+    border: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    margin-left: 10px; /* Adjust margin as needed */
+  }
+  
+  /* Cool hover animation */
+  .futuristic-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff0000;
+    animation: pulse 1s infinite; /* Adding a pulse animation */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ff0000;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Additional animation for card */
+  .card {
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for cards */
+  .card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  

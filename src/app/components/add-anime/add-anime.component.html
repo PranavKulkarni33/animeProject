@@ -1,0 +1,99 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-opacity">
+    <div class="container-fluid">
+      <div class="navbar-brand mx-auto font-weight-bold futuristic-text">Anime Project</div>
+      
+    </div>
+  </nav>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 mt-2">
+        <div class="card p-3 shadow">
+          <div class="card-body">
+            <div class="form-floating mb-3 text-center">
+              <h5 class="text-center navbar-brand mx-auto font-weight-bold futuristic-text">Anime List</h5>
+            </div>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">English Name</th>
+                  <th scope="col">Current Stats</th>
+                  <th scope="col">No. of Seasons</th>
+                  <th scope="col">Episode</th>
+                  <th scope="col">Theme</th>
+                  <th scope="col">Gist</th>
+                  <th scope="col">Updates</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let anime of animeList; let i = index">
+                  <!-- Replace with appropriate bindings for anime details -->
+                  <td>{{ anime.name }}</td>
+                  <td>{{ anime.englishName }}</td>
+                  <td>{{ anime.currentStats }}</td>
+                  <td>{{ anime.noOfSeasons }}</td>
+                  <td>{{ anime.episodes }}</td>
+                  <td>{{ anime.theme }}</td>
+                  <td>{{ anime.gist }}</td>
+                  <td>{{ anime.updates }}</td>
+                  <!-- Add other table data for anime details -->
+                  <td>
+                    <button class="btn btn-outline-danger" (click)="deleteAnime(anime)">Delete</button>
+                    <!-- <button class="btn btn-outline-primary" (click)="editAnime(anime)">Edit</button>
+                    <button class="btn btn-outline-success" (click)="saveAnime(anime, i)">Save</button> -->
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="btn btn-danger text-center futuristic-button" (click)="back()">Back</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-12 mt-5">
+        <div class="card border-0 shadow p-3">
+          <div class="form-floating mb-3 text-center">
+            <h5 class="text-center navbar-brand mx-auto font-weight-bold futuristic-text">Add Anime</h5>
+          </div>
+          <!-- Replace the input fields with appropriate anime details -->
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="animeName" name="animeName" [(ngModel)]="newAnime.name">
+            <label for="animeName">Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="englishName" name="englishName" [(ngModel)]="newAnime.englishName">
+            <label for="englishName">English Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="currentStats" name="currentStats" [(ngModel)]="newAnime.currentStats">
+            <label for="currentStats">Current Stats</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="noOfSeasons" name="noOfSeasons" [(ngModel)]="newAnime.noOfSeasons">
+            <label for="noOfSeasons">Number of Seasons</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="episodes" name="episodes" [(ngModel)]="newAnime.episodes">
+            <label for="episodes">Episodes</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="theme" name="theme" [(ngModel)]="newAnime.theme">
+            <label for="theme">Theme</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="gist" name="gist" [(ngModel)]="newAnime.gist">
+            <label for="gist">Gist</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="updates" name="updates" [(ngModel)]="newAnime.updates">
+            <label for="updates">Updates</label>
+          </div>
+          
+          <button type="button" class="btn btn-success text-center futuristic-button" (click)="addAnime()">Add Anime</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
